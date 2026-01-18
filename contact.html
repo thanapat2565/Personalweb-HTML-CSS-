@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="th">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ติดต่อสอบถาม | Personal Web thanapat</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;500;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/png" sizes="32x32" href="icon.png">
+</head>
+<body>
+
+    <header>
+        <h1 style="color: #1a252f;"> Welcome!</h1>
+        <h1>Personal Web</h1>
+         <h3> Mr.Thanapat Sahnguankiad</h3>
+        <p>คณะเทคโนโลยีสารสนเทศ | มหาวิทยาลัยศรีปทุม ขอนแก่น</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">หน้าแรก</a></li>
+            <li><a href="index.html#about">ประวัติ</a></li>
+            <li><a href="index.html#works">ผลงาน</a></li>
+            <li><a href="certificate.html">เกียรติบัตร</a></li>
+            <li><a href="contact.html">ติดต่อ</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <div class="content-area">
+            <article>
+                <h2>แบบฟอร์มการติดต่อ (Contact Form)</h2>
+                <p class="contact-note">หมายเหตุ : หากต้องการติดต่อเรื่องด่วนโทรเบอร์ได้...แต่ไม่รับ</p>
+
+                <form action="https://api.web3forms.com/submit" method="POST" class="contact-form">
+                    <input type="hidden" name="access_key" value="81a73d1a-0413-4963-9881-bc201a6c3250">
+                    
+                    <div class="form-group">
+                        <label for="fname">ชื่อ-นามสกุล :</label>
+                        <input type="text" id="fname" name="name"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="tel">เบอร์โทรศัพท์ :</label>
+                        <input type="text" id="tel" name="phone" >
+                    </div>
+
+                    <div class="form-group">
+                        <label for="email">อีเมล :</label>
+                        <input type="email" id="email" name="email"  required>
+                    </div>
+
+                    <div class="form-group">
+                        <label for="message">ข้อความที่ต้องการติดต่อ :</label>
+                        <textarea id="message" name="message" rows="6" ></textarea>
+                    </div>
+
+                    <div class="form-buttons">
+                        <button type="submit" class="btn-submit">ส่งข้อความ</button>
+                        <button type="reset" class="btn-reset">ล้างข้อมูล</button>
+                    </div>
+                </form>
+            </article>
+        </div>
+
+        <aside>
+            <p style="color: aliceblue;">ยินดีรับฟังทุกคำติชมและข้อเสนอแนะครับ!</p>
+
+             <hr style="margin: 15px 0;">
+             
+            <h3>ข้อมูลการติดต่อ</h3>
+            <ul class="skill-list">
+                <li><strong>ที่อยู่:</strong> ณ บ้านนาเกลือ</li>
+                <li><strong>เบอร์โทร </strong>081-2538-397</li>
+                <li><strong>อีเมล:</strong> cesdasngwnkeiyrti@gmail.com</li>
+            </ul>
+           <hr style="margin: 15px 0;">
+
+    <h3>My Platforms</h3>
+    <div class="social-links-img">
+        <a href="https://www.facebook.com/tigerboy.ts/" target="_blank">
+            <img src="Facebooklogo.png" alt="Facebook">
+        </a>
+        <a href="https://www.instagram.com/manteeeye/" target="_blank">
+            <img src="iglogo.jpg" alt="Instagram">
+        </a>
+        <a href="https://line.me/ti/p/tiger01k" target="_blank">
+            <img src="line logo.jpg" alt="Line">
+        </a>
+    </div>
+            
+
+        </aside>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Thanapat Sanguankiat | Digital Business Innovation</p>
+    </footer>
+
+</body>
+</html>

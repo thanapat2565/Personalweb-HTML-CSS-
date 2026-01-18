@@ -1,0 +1,581 @@
+
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Kanit', sans-serif, 'Segoe UI'; /* ฟอนต์ */
+}
+
+
+/* ลดความเร็วเวลาเว็บเลื่อน */
+html {
+    scroll-behavior: smooth; 
+}
+
+
+body {
+    background-color: #222c3a;
+    color: #333;
+    line-height: 1.6;
+}
+
+
+
+/* Header  */
+header {
+    background-color: #3498db;
+    color: white;
+    text-align: center;
+    padding: 50px 20px;
+}
+
+/* Nav */
+nav {
+    background-color: #062848;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+}
+
+nav ul {
+    list-style: none;
+    text-align: center;
+}
+
+nav ul li {
+    display: inline-block;
+}
+
+nav ul li a {
+    display: block;
+    padding: 15px 25px;
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+    transition: background 0.3s;
+}
+
+nav ul li a:hover {
+    background-color: #116869;
+}
+
+
+
+/*  Main  */
+
+
+
+.container {
+    display: flex;
+    max-width: 1200px;
+    margin: 30px auto;
+    padding: 0 20px;
+    gap: 30px;
+}
+
+.content-area {
+    flex: 3; /* ส่วนเนื้อหาหลักกว้างกว่า */
+}
+
+/* การตกแต่งบล็อกเนื้อหา (Articles) */
+article {
+    background: white;
+    padding: 30px;
+    margin-bottom: 30px;
+    border-radius: 12px;
+    box-shadow: 0 4px 6px rgba(0,0,0,0.05);
+}
+
+article h2 {
+    color: #062848;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #3498db;
+    display: inline-block;
+    padding-bottom: 5px;
+}
+
+
+/* รูปโปรไฟล์ */
+
+
+.profile-container {
+    text-align: center;
+    margin-bottom: 25px;
+}
+
+.profile-img {
+    width: 180px;
+    height: 180px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 6px solid #fff;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    transition: transform 0.4s ease;
+}
+
+.profile-img:hover {
+    transform: rotate(5deg) scale(1.1);
+}
+
+
+
+
+/* ส่วนข้อมูลส่วนตัว */
+
+
+.personal-info p {
+    margin-bottom: 10px;
+    font-size: 1.05rem;
+}
+
+.personal-info strong {
+    color: #3498db;
+}
+
+
+
+
+
+/*  คติประจำใจ  */
+.motto {
+    font-style: italic;
+    color: #555;
+    border-left: 4px solid #2ecc71;
+    padding-left: 15px;
+    margin: 20px 0;
+    font-size: 1.1rem;
+    background-color: #f9f9f9;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+
+
+
+
+/* ผลงาน */
+
+
+.project-card {
+    border-left: 5px solid #3498db;
+    background: #f9f9f9;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 4px;
+}
+
+
+
+/* ประสบการณ์การทำงาน */
+.experience-item {
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.experience-item:last-child {
+    border-bottom: none;
+}
+
+.experience-item h3 {
+    color: #34495e;
+}
+
+.experience-item .date {
+    color: #7f8c8d;
+    font-size: 0.9rem;
+    font-style: italic;
+    margin-bottom: 8px;
+}
+
+
+
+/* งานอดิเรก  */
+
+
+
+.hobbies-grid {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 10px;
+}
+
+.hobby-tag {
+    background-color: #fce4ec; 
+    color: #d81b60;
+    padding: 8px 18px;
+    border-radius: 30px;
+    font-weight: bold;
+    font-size: 0.9rem;
+    border: 1px solid #f8bbd0;
+}
+
+
+
+/* แถบทักษะ */
+
+
+aside {
+    flex: 1;
+    background-color: #062848;
+    padding: 25px;
+    border-radius: 12px;
+    height: fit-content;
+    box-shadow: 0 4px 6px rgba(200, 184, 184, 0.05);
+}
+
+aside h3 {
+    margin-bottom: 15px;
+    color: white;
+}
+
+.skill-list {
+    list-style: none;
+}
+
+.skill-list li {
+    background: rgba(255, 255, 255, 0.6);
+    margin-bottom: 10px;
+    padding: 8px 12px;
+    border-radius: 6px;
+    font-weight: 500;
+}
+
+/* รูปไอคอน Social Media ในแถบทักษะ */
+.social-links-img {
+    display: flex;
+    gap: 12px;           /* ระยะห่างระหว่างรูป */
+    margin-top: 15px;
+    flex-wrap: wrap;     /* ให้ขึ้นบรรทัดใหม่ได้ถ้าพื้นที่ไม่พอ */
+}
+
+.social-links-img a {
+    text-decoration: none;
+    transition: transform 0.3s ease;
+}
+
+.social-links-img img {
+    width: 40px;         /* ปรับขนาดความกว้างรูปไอคอน */
+    height: 40px;        /* ปรับขนาดความสูงรูปไอคอน */
+    object-fit: contain; /* ให้รูปคงสัดส่วนเดิม */
+    border-radius: 8px;  /* เพิ่มความโค้งมนให้รูปเล็กน้อย */
+}
+
+/* เอฟเฟกต์เวลาเอาเมาส์ไปชี้ที่รูป */
+
+.social-links-img a:hover {
+    transform: scale(1.15); /* รูปขยายใหญ่ขึ้นเวลาชี้ */
+    filter: brightness(1.2); /* รูปสว่างขึ้นเวลาชี้ */
+}
+
+
+
+
+/* Footer  */
+
+
+footer {
+    background-color: #062848;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 50px;
+}
+
+
+
+/* เพลงยูทูป */
+.music-player {
+    margin: 15px 0;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.music-desc {
+    font-size: 0.95rem;
+    color: #444;
+    background: #fff5f8;
+    padding: 15px;
+    border-radius: 10px;
+    border-right: 4px solid #d81b60;
+    border-left: none; 
+    margin-top: 10px;
+}
+
+
+
+
+/* connect.html */
+
+
+
+
+.contact-note { /* หมายเหตุ */
+    color: #e74c3c;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+    font-style: italic;
+    background: #fdf2f2;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+/* พื้นหลังแบบฟอร์มติดต่อ */
+
+nav ul li a:hover { color: #ededed; } 
+nav ul li a:hover::after { width: 70%; }
+
+
+/* คอลัมแบบฟอร์มติดต่อ */
+
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-weight: 500;
+    color: #2c3e50;
+}
+
+.contact-form input, 
+.contact-form textarea {
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 1rem;
+    width: 100%;
+}
+
+.contact-form input:focus, 
+.contact-form textarea:focus {
+    outline: none;
+    border-color: #012c49;
+    box-shadow: 0 0 5px rgba(52,152,219,0.2);
+}
+
+
+/* ปุ่มแบบฟอร์ม */
+
+.form-buttons {
+    display: flex;
+    gap: 15px;
+    margin-top: 10px;
+}
+
+.btn-submit { /* ปุ่มส่ง */
+    background-color: #2ecc71;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    font-weight: bold;
+    cursor: pointer;
+    flex: 2;
+    font-size: 1rem;
+}
+
+.btn-submit:hover {
+    background-color: #27ae60;
+}
+
+.btn-reset { /* ปุ่มลบข้อความ */
+    background-color: #c70f0f;
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    flex: 1;
+}
+
+.btn-reset:hover {
+    background-color: #7f8c8d;
+}
+
+
+
+
+/* certificate.html */
+
+
+
+.cert-page {
+    text-align: center;
+}
+
+.cert-display {
+    margin: 30px 0;
+    padding: 15px;
+    background: #f8f9fa;
+    border-radius: 10px;
+    border: 1px dashed #3498db;
+}
+
+.cert-image-large {
+    max-width: 60%;
+    height: auto;
+    border-radius: 5px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.15);
+    transition: transform 0.3s;
+}
+
+
+/* ขยายรูปตอนเอาเมาส์ชี้รูปเกียรติบัตร */
+
+.cert-image-large:hover {
+    transform: scale(1.02); 
+}
+
+.cert-detail {
+    text-align: left;
+    background: #fff;
+    padding: 25px;
+    border-radius: 8px;
+}
+
+.cert-detail h3 {
+    color: #2c3e50;
+    font-size: 1.5rem;
+    margin-bottom: 5px;
+}
+
+.award-tier {
+    color: #7f8c8d;
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-bottom: 15px;
+}
+
+.cert-detail hr {
+    margin: 15px 0;
+    border: 0;
+    border-top: 1px solid #eee;
+}
+
+.cert-detail p {
+    margin-bottom: 8px;
+    font-size: 1.1rem;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; font-family: 'Kanit', sans-serif; }
+html { scroll-behavior: smooth; }
+body { background-color: #f0f2f5; color: #333; line-height: 1.6; }
+
+
+
+/* Header & Nav */
+
+header {
+    background: linear-gradient(135deg, #1a252f 0%, #3498db 100%);
+    color: white; text-align: center; padding: 60px 20px;
+}
+
+nav {
+    background-color: #1a252f;
+    position: sticky; top: 0; z-index: 1000;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+nav ul { list-style: none; display: flex; justify-content: center; }
+nav ul li a {
+    display: block; padding: 20px 20px; color: #fff;
+    text-decoration: none; font-weight: 500; position: relative;
+    transition: 0.3s;
+}
+
+nav ul li a::after {
+    content: ''; position: absolute; width: 0; height: 3px;
+    bottom: 12px; left: 50%; background-color: #dfe9e3;
+    transition: 0.3s; transform: translateX(-50%);
+}
+
+
+
+
+
+
+
+
+
+/* Layout */
+.container { display: flex; max-width: 1200px; margin: 30px auto; padding: 0 20px; gap: 30px; }
+.content-area { flex: 3; }
+article { background: white; padding: 30px; margin-bottom: 30px; border-radius: 12px; box-shadow: 0 4px 6px rgba(0,0,0,0.05); }
+
+/* งานอดิเรก */
+.hobby-content-box {
+    background: #ffffff;
+    border-radius: 20px; /* ขอบมน */
+    padding: 25px;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.08); 
+    margin-bottom: 30px;
+    border: 1px solid #f0f0f0;
+}
+
+.hobby-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 20px;
+}
+
+
+/* ฟอนต์ ข้อความ งานอดิเรก "ฟังเพลง" */
+
+.hobby-title {
+    font-size: 1.4rem;
+    font-weight: bold;
+    color: #d81b60; 
+}
+
+
+/* โทนสีที่ใช้ในเว็บ */
+
+
+#web-colors p {
+    margin-bottom: 20px;
+    font-size: 1.05rem;
+    text-indent: 20px; 
+}
+
+
+/* รูปภาพสีน้ำเงิน */
+
+.color-gallery {
+    display: flex;
+    flex-direction: column; 
+    gap: 30px;
+    margin: 25px 0;
+}
+
+.color-image-item {
+    width: 100%;
+    text-align: center;
+}
+
+.full-width-img {
+    width: 100%;
+    max-height: 500px;
+    object-fit: cover; 
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+
+/* ชี้รูปภาพสีน้ำเงินแล้วภาพเด้ง */
+
+.full-width-img:hover {
+    transform: scale(1.01); 
+}
+
