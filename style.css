@@ -106,8 +106,8 @@ article h2 {
 }
 
 .profile-img {
-    width: 250px;
-    height: 250px;
+    width: 300px;
+    height: 300px;
     object-fit: cover;
     border-radius: 50%;
     border: 6px solid #fff;
@@ -578,5 +578,6 @@ article { background: white; padding: 30px; margin-bottom: 30px; border-radius: 
 .full-width-img:hover {
     transform: scale(1.01); 
 }
+
 
 
